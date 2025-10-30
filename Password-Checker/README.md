@@ -19,20 +19,21 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________
 
 ### Usage
-Run in terminal:
+Run the Python file:
 
 `python password_checker.py`
 
 Then enter a password when prompted.
 Example output:
 
+` ``` `
 --- Password Strength Report ---
 Password: Test123!
 Score: 6 / 10
 Level: Moderate
 Entropy: 52.3 bits
 Weaknesses:
-  - Too short (min 8 chars)
+  - Too short (min 8 chars) ` ``` `
 
 
 
