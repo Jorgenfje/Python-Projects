@@ -39,6 +39,6 @@ FINAL RATING: Moderate — Could be improved.
 ___________________________________________________________________________________________________________
 
 ### 🧩 Files
-`analyzer.py`          → Handles API logic and SHA-1 hashing
-`password_checker.py`  → Main CLI program
-`test_analyzer.py`     → Simple test file
+- `analyzer.py`          → Handles API logic and SHA-1 hashing
+- `password_checker.py`  → Main CLI program
+- `test_analyzer.py`     → Simple test file
