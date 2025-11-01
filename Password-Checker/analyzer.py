@@ -1,6 +1,3 @@
-# analyzer.py
-# Developed by Jørgen A. Fjellstad - 2025
-
 import hashlib
 import requests
 from functools import lru_cache
