@@ -1,6 +1,3 @@
-# password_checker.py
-# Developed by Jørgen A. Fjellstad - 2025
-
 from math import log2
 from analyzer import count_pwned_occurrences
 
