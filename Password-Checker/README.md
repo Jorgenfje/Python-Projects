@@ -1,40 +1,44 @@
-### 🔐 Password Strength Checker
+### 🔐 Password-Checker
 Developed by Jørgen A. Fjellstad - October 2025
 
-_________________________________________________________________________________________________________________________________________
+A Python tool that analyzes password strength and checks if a password has appeared in known data breaches.
 
-A Python-based command-line tool that evaluates password strength using multiple factors such as length, character diversity, and entropy.  
-Designed for easy expansion into a web interface or API later.
+___________________________________________________________________________________________________________
 
-_________________________________________________________________________________________________________________________________________
+**Features**
+- Length and character variety scoring  
+- Live breach check via *Have I Been Pwned* (k-anonymity)  
+- Entropy estimation for theoretical strength  
+- Color-coded terminal output with clear explanations  
 
-### Features
-- Evaluates password strength by:
-  - Length and complexity
-  - Uppercase, lowercase, digits, and symbols
-  - Entropy (bit strength)
-  - Blacklist detection (common weak passwords)
-- Outputs a detailed strength report with weaknesses and score.
+___________________________________________________________________________________________________________
 
-_________________________________________________________________________________________________________________________________________
+### 🧠 How It Works
+- The password is hashed locally with SHA-1.  
+- Only the first 5 characters of the hash are sent to the HIBP API.  
+- Matching results are compared locally to determine if it has been leaked.  
+- No passwords or full hashes ever leave your computer.
 
-### Usage
-Run the Python file:
+___________________________________________________________________________________________________________
 
-`python password_checker.py`
+### ▶️ Usage
+```bash
+python password_checker.py
 
-Then enter a password when prompted.
-Example output:
-
+--- Password Analysis Report ---
+🔢 Length: 13 characters
+✅ Good length.
+🔠 Character variety: 4/4 types (upper, lower, digit, symbol)
+✅ Strong variety of characters.
+✅ Data breach check: Not found in known breaches.
+🧮 Entropy: 85.21 bits (Strong — very hard to brute-force)
+📊 Overall strength score: 7/10
+--------------------------------
+FINAL RATING: Moderate — Could be improved.
 ```
---- Password Strength Report ---
-Password: Test123!
-Score: 6 / 10
-Level: Moderate
-Entropy: 52.3 bits
-Weaknesses:
- - Too short (min 8 chars)
-```
+___________________________________________________________________________________________________________
 
-
-
+### 🧩 Files
+`analyzer.py`          → Handles API logic and SHA-1 hashing
+`password_checker.py`  → Main CLI program
+`test_analyzer.py`     → Simple test file
