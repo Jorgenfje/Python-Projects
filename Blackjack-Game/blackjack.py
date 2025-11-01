@@ -159,7 +159,7 @@ def play_blackjack(chips):
         print(f"{RED}Dealer wins with a higher hand. 💰 -{bet}{RESET}")
         return chips - bet
     else:
-        print(f"{YELLOW}Push. It's a tie — bet returned.{RESET}")
+        print(f"{YELLOW}Push. It's a tie - bet returned.{RESET}")
         return chips
 
 
