@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+alerts.json
+env/
+venv/
+*.sqlite3
