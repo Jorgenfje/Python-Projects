@@ -11,8 +11,8 @@ ________________________________________________________________________________
 ### 📊 Features
 - **Live dashboard** with auto-refresh and blinking status indicator  
 - **Dual view modes:**  
-  - *Technical View* – detailed log data for analysts  
-  - *Simplified View* – human-readable summaries for executives  
+  - *Technical View* - detailed log data for analysts  
+  - *Simplified View* - human-readable summaries for executives  
 - **Interactive charts:** Severity distribution + most frequent event types  
 - **Filter & sort:** Filter by severity or sort directly by clicking cards  
 - **Persistent storage:** Alerts automatically written to `alerts.json`  
@@ -48,7 +48,7 @@ http://127.0.0.1:5000
 
 - Python 3
 - Flask - lightweight backend web framework
-- Chart.js – dynamic data visualization
-- HTML, CSS, JavaScript – modern dashboard frontend
+- Chart.js - dynamic data visualization
+- HTML, CSS, JavaScript - modern dashboard frontend
 
 
