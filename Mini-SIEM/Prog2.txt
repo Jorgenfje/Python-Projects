@@ -1,0 +1,55 @@
+from robolink import *   
+from robodk import *     
+from math import radians, degrees, pi
+
+RDK = Robolink()
+robot = RDK.Item('H-Bot', ITEM_TYPE_ROBOT)
+if not robot.Valid():
+
+    robot = RDK.Item('', ITEM_TYPE_ROBOT)
+if not robot.Valid():
+    raise Exception('Fant ingen robot i stasjonen.')
+
+
+def round_list(vals, n=3):
+    return [round(float(v), n) for v in vals]
+
+def dh_A(a, alpha, d, theta):
+
+    return rotz(theta) * transl(0, 0, d) * transl(a, 0, 0) * rotx(alpha)
+
+
+DH_PARAMS = [
+    (0.0,     -pi/2, 285.0, 0.0),
+    (700.0,   0.0,    0.0, 0.0),
+    (0.0,     -pi/2,    0.0, -pi/2),  
+    (0.0,     pi/2, 650.0, 0.0),
+    (0.0,    -pi/2,   0.0, 0.0),
+    (0.0,     0.0,  170.0, 0.0),
+]
+
+
+j_deg = robot.Joints().list()
+j_rad = [radians(float(v)) for v in j_deg]
+print("Gjeldende joints (grader):", round_list(j_deg, 3))
+
+
+T = eye(4)  
+for i in range(6):
+    a, alpha, d, theta_off = DH_PARAMS[i]
+    theta = j_rad[i] + theta_off
+    T = T * dh_A(a, alpha, d, theta)
+
+
+pose_DH  = Pose_2_TxyzRxyz(T)   
+pose_RDK = Pose_2_TxyzRxyz(robot.Pose())
+
+print("\n--- Klassisk DH-basert pose ---")
+print("DH  [x,y,z,Rx,Ry,Rz]:", round_list(pose_DH, 3))
+
+print("\n--- RoboDK sin pose ---")
+print("RDK [x,y,z,Rx,Ry,Rz]:", round_list(pose_RDK, 3))
+
+
+diff_xyz = [pose_DH[i] - pose_RDK[i] for i in range(3)]
+print("\nForskjell i posisjon (mm) DH - RDK:", round_list(diff_xyz, 3))

@@ -1,0 +1,9 @@
+Gjeldende joints (grader): [79.84, -65.32, 33.39, -90.0, 90.0, 0.0]
+
+--- Klassisk DH-basert pose ---
+DH  [x,y,z,Rx,Ry,Rz]: [316.203, 800.715, 1264.832, 1.571, 1.393, 0.557]
+
+--- RoboDK sin pose ---
+RDK [x,y,z,Rx,Ry,Rz]: [316.203, 800.715, 1264.832, 1.571, 1.393, 0.557]
+
+Forskjell i posisjon (mm) DH - RDK: [0.0, 0.0, 0.0]
