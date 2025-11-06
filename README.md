@@ -1,21 +1,26 @@
-# 🐍 Python Projects
-
-_____________________________________________________________________________________________________________________________________
+### 🐍 Python Projects
+Developed by Jørgen A. Fjellstad - 2025
 
 A growing collection of small Python projects developed for learning, experimentation, and demonstration of programming concepts.  
-Each project is self-contained and focuses on specific techniques such as file handling, testing, data analysis, or simple automation.
+Each project is self-contained and focuses on specific techniques such as file handling, testing, data analysis, web development, or simple automation.
 
-_____________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________
 
-### 📁 Structure
+### 📂 Structure
 - **Blackjack-Game/** - interactive console card game with testing suite  
-- **Password-Checker/** - evaluates password strength with entropy and checks if a password has appeared in known data breaches 
-- **Other upcoming folders** - new experiments and tools will be added gradually
+- **Password-Checker/** - evaluates password strength with entropy and breach lookup  
+- **Mini-SIEM/** - real-time Flask dashboard simulating a Security Information & Event Management system  
+- **Other upcoming folders** - new experiments and tools will be added gradually  
 
-_____________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________
 
 ### 💡 Goals
 - Practice Python fundamentals  
-- Demonstrate clean, modular code  
-- Explore testing, error handling, and CLI interaction  
-- Build a foundation for larger future applications  
+- Demonstrate clean, modular code and reusable components  
+- Explore testing, error handling, CLI interaction, and visualization  
+- Learn about web frameworks like Flask and simple frontend integration  
+- Build a foundation for larger cybersecurity and automation tools  
+
+
+
+
