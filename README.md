@@ -8,6 +8,7 @@ ________________________________________________________________________________
 
 ### 📂 Structure
 - **Blackjack-Game/** - interactive console card game with testing suite  
+- **Boliganalyse/** - AI-driven analysis of the housing market in Østfold with web scraping, ML & dashboard
 - **Password-Checker/** - evaluates password strength with entropy and breach lookup  
 - **Mini-SIEM/** - real-time Flask dashboard simulating a Security Information & Event Management system  
 - **Other upcoming folders** - new experiments and tools will be added gradually  
@@ -18,8 +19,7 @@ ________________________________________________________________________________
 - Practice Python fundamentals  
 - Demonstrate clean, modular code and reusable components  
 - Explore testing, error handling, CLI interaction, and visualization  
-- Learn about web frameworks like Flask and simple frontend integration  
-- Build a foundation for larger cybersecurity and automation tools  
+- Learn about web frameworks like Flask and simple frontend integration 
 
 
 
