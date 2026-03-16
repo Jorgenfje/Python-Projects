@@ -2,8 +2,6 @@
 
 AI-drevet analyse av boligmarkedet i Østfold med web scraping, maskinlæring og interaktivt dashboard.
 
-![Dashboard Preview](screenshots/dashboard.png)
-
 ## Prosjektbeskrivelse
 
 Fullstack data science-prosjekt som:
@@ -90,7 +88,3 @@ streamlit run app.py
 Jørgen A. Fjellstad  
 Bachelor i ingeniørfag - data, Høgskolen i Østfold  
 [GitHub](https://github.com/Jorgenfje) | [LinkedIn](https://linkedin.com/in/jorgen-fjellstad)
-
-## Lisens
-
-MIT
